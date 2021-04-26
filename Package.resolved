@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "mamba",
+        "repositoryURL": "https://github.com/comcast/mamba.git",
+        "state": {
+          "branch": null,
+          "revision": "4d2ebb7f38ef1869b926e68f9baca02d5da659ae",
+          "version": "1.5.1"
+        }
+      },
+      {
+        "package": "swift-argument-parser",
+        "repositoryURL": "https://github.com/apple/swift-argument-parser",
+        "state": {
+          "branch": null,
+          "revision": "47bd06ebeff8146ecd0020809e186218b46f465f",
+          "version": "0.4.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
