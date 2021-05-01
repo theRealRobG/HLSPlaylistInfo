@@ -11,7 +11,7 @@ struct PlaylistInfo {
 extension PlaylistInfo: CustomStringConvertible {
     @DescriptionBuilder
     var description: String {
-        "# HLSPlaylistInfo v0.1.0"
+        "# HLSPlaylistInfo \(Version.current)"
         " "
         "\(baseInfo)"
         " "
