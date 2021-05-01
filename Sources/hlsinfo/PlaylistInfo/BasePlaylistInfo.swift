@@ -40,14 +40,19 @@ extension BasePlaylistInfo: CustomStringConvertible {
     var description: String {
         "## \(url)"
         "## \(fileType) Playlist"
+        body.indenting(by: 2)
+    }
+    
+    @DescriptionBuilder
+    private var body: String {
         if let playlistType = playlistType {
-            "  Type: \(playlistType)"
+            "Type: \(playlistType)"
         }
         if let masterInfo = masterInfo {
-            "\(masterInfo)"
+            "\(masterInfo)".indenting(by: 2)
         }
         if let duration = duration {
-            "  Duration: \(duration)s (\(duration.formattedPlaybackTime()))"
+            "Duration: \(duration)s (\(duration.formattedPlaybackTime()))"
         }
     }
 }
